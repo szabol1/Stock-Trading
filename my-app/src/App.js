@@ -8,6 +8,7 @@ function App() {
     <div>
         <NavBar />
         <LoginForm />
+        <Chart />
     </div>
   );
 }

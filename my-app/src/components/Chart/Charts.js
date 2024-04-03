@@ -12,7 +12,7 @@ const Charts = () => {
 
     const historical = async () => {
         try {
-            const url = 'https://api.finazon.io/latest/time_series?dataset=sip_non_pro&ticker=AAPL&interval=2d';
+            const url = 'https://api.finazon.io/latest/time_series?dataset=sip_non_pro&ticker=AAPL&interval=1d';
             const response = await fetch(url, {
                 method: 'GET',
                 headers: {
@@ -33,8 +33,8 @@ const Charts = () => {
     useEffect(() => {
         // Set up a timer to update the current index every second
         const timer = setInterval(() => {
-            setCurrentIndex((currentIndex) => currentIndex + 1);
-        }, 1000);
+            setCurrentIndex((currentIndex) => currentIndex + 100);
+        }, 10000);
 
         // Clear the timer when the component unmounts
         return () => clearInterval(timer);
@@ -48,7 +48,7 @@ const Charts = () => {
             const labels = [];
             const highData = [];
             for (const data of stockData.slice(0, currentIndex + 1)) {
-                const date = new Date(data.t * 1000); // Convert Unix timestamp to JavaScript Date
+                const date = new Date(data.t * 3000); // Convert Unix timestamp to JavaScript Date
                 labels.push(date);
                 highData.push(data.h);
             }
