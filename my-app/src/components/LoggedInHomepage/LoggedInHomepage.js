@@ -8,10 +8,10 @@ const Homepage = () => {
         <div>
             <div style={{ display: 'flex' }}>
                 <div style={{ flex: 1 }}>
-                    <ChartComponent />
+                    <Chart />
                 </div>
                 <div style={{ flex: 1 }}>
-                    <StockListComponent />
+                    <StockList />
                 </div>
             </div>
             <div>
