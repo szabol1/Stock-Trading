@@ -3,6 +3,7 @@ import Chart from './components/Chart/Charts';
 import Login from "./Pages/Login/Login";
 import React from 'react';
 import LoginForm from './Pages/Login/Login';
+import StockList from './components/StockList/StockList';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <NavBar />
         <LoginForm />
         <Chart />
+        <StockList />
     </div>
   );
 }

@@ -49,7 +49,7 @@ const Charts = () => {
                     datasets: [{
                         label: 'Apple Inc. (AAPL) Stock Price',
                         data: hValues,
-                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderColor: 'rgba(75, 255, 255, 1)',
                         fill: false
                     }]
                 },

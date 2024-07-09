@@ -3,7 +3,7 @@ import { Form, Button, Row, Col } from 'react-bootstrap';
 function LoginForm() {
   return (
     <Row style = {{height: "90vh"}}>
-    <Col className="bg-image" ></Col>
+    <Col className="bg-image"></Col>
     <Col className="d-flex justify-content-center form" style = {{paddingTop: "6rem"}}>
       <div>
           <Form className="mx-auto rounded Login" style={{padding: "3rem"}}>
