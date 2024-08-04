@@ -44,8 +44,8 @@ const StockList = () => {
     }, []);
 
     return (
-        <div style = {{width: '300px',backgroundColor: 'black'}}>
-            <h1 style= {{color: 'white'}}>Stock List</h1>
+        <div style = {{width: '300px',backgroundColor: 'black', height: '500px'}}>
+            <h1 style= {{color: 'white', padding: '0px', fontSize: '30px'}}>Popular Stock Picks</h1>
             <ul style = {{display: 'block'}}>
                 {stockPrices.map(({ stock, price }) => (
                     <li key={stock} style = {{display: 'block', marginBottom: '1em', color: 'white'}}><span style={{display: 'inline-block', textAlign:'center', backgroundColor: 'red', width: '80px', height: '50px', lineHeight: '50px', marginRight: '20px' }}> {price.toFixed(2)} </span>{stock} </li>

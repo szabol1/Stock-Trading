@@ -1,0 +1,32 @@
+.landing-page {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 2/3 for chart, 1/3 for stock list */
+  grid-template-rows: auto auto; /* Two rows: one for the chart and stock list, one for articles */
+  width: 100%;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.chart-section {
+  grid-column: 1 / 2; /* Chart takes up first column */
+  background-color: black; /* For visibility */
+  padding: 50px;
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+.stock-list-section {
+  grid-column: 2 / 3; /* Stock list takes up second column */
+  background-color: black;
+  padding: 30px;
+  padding-left: 150px;
+}
+
+.articles-section {
+  grid-column: 1 / 3; /* Articles span both columns */
+  padding: 50px;
+  background-color:black;
+}
+h1{
+  padding: 50px
+}

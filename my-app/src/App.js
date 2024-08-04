@@ -4,14 +4,12 @@ import Login from "./Pages/Login/Login";
 import React from 'react';
 import LoginForm from './Pages/Login/Login';
 import StockList from './components/StockList/StockList';
+import LandingPage from './Pages/LandingPage/LandingPage';
 
 function App() {
   return (
     <div>
-        <NavBar />
-        <LoginForm />
-        <Chart />
-        <StockList />
+        <LandingPage />
     </div>
   );
 }

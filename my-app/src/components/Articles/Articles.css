@@ -1,0 +1,29 @@
+.articles-slider {
+  background-color: black;
+  overflow-x: auto;
+  white-space: nowrap;
+  color: white;
+  max-width: 100%;
+}
+
+
+.articles-container {
+  display: flex;
+
+}
+
+.article-item {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.article-content {
+  display: flex;
+  align-items: center;
+}
+
+.article-title {
+  font-size: 20px;
+  color: white;
+}
